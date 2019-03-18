@@ -28,8 +28,6 @@
 		B095C6D521E86A1F00B92B69 /* MetalContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = B095C53621E86A1E00B92B69 /* MetalContext.mm */; };
 		B095C6D621E86A1F00B92B69 /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = B095C53921E86A1E00B92B69 /* MetalView.m */; };
 		B095C6D821E86A1F00B92B69 /* TextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B095C54021E86A1E00B92B69 /* TextureRenderer.m */; };
-		B095C6DD21E86A1F00B92B69 /* TriangleRendererEncoder.metal in Sources */ = {isa = PBXBuildFile; fileRef = B095C54C21E86A1E00B92B69 /* TriangleRendererEncoder.metal */; };
-		B095C6DE21E86A1F00B92B69 /* TriangleRendererEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B095C54E21E86A1E00B92B69 /* TriangleRendererEncoder.mm */; };
 		B095C6E121E86A1F00B92B69 /* TextureRendererEncoder.metal in Sources */ = {isa = PBXBuildFile; fileRef = B095C55421E86A1E00B92B69 /* TextureRendererEncoder.metal */; };
 		B095C6E221E86A1F00B92B69 /* TextureRendererEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B095C55621E86A1E00B92B69 /* TextureRendererEncoder.mm */; };
 		B095C6EA21E86A1F00B92B69 /* MathUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B095C56E21E86A1E00B92B69 /* MathUtilities.cpp */; };
@@ -111,9 +109,6 @@
 		B095C53A21E86A1E00B92B69 /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
 		B095C54021E86A1E00B92B69 /* TextureRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureRenderer.m; sourceTree = "<group>"; };
 		B095C54121E86A1E00B92B69 /* TextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureRenderer.h; sourceTree = "<group>"; };
-		B095C54C21E86A1E00B92B69 /* TriangleRendererEncoder.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = TriangleRendererEncoder.metal; sourceTree = "<group>"; };
-		B095C54D21E86A1E00B92B69 /* TriangleRendererEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleRendererEncoder.h; sourceTree = "<group>"; };
-		B095C54E21E86A1E00B92B69 /* TriangleRendererEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleRendererEncoder.mm; sourceTree = "<group>"; };
 		B095C55421E86A1E00B92B69 /* TextureRendererEncoder.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = TextureRendererEncoder.metal; sourceTree = "<group>"; };
 		B095C55521E86A1E00B92B69 /* TextureRendererEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureRendererEncoder.h; sourceTree = "<group>"; };
 		B095C55621E86A1E00B92B69 /* TextureRendererEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextureRendererEncoder.mm; sourceTree = "<group>"; };
@@ -637,20 +632,9 @@
 		B095C54221E86A1E00B92B69 /* MetalEncoder */ = {
 			isa = PBXGroup;
 			children = (
-				B095C54B21E86A1E00B92B69 /* TriangleRendererEncoder */,
 				B095C55321E86A1E00B92B69 /* TextureRendererEncoder */,
 			);
 			path = MetalEncoder;
-			sourceTree = "<group>";
-		};
-		B095C54B21E86A1E00B92B69 /* TriangleRendererEncoder */ = {
-			isa = PBXGroup;
-			children = (
-				B095C54C21E86A1E00B92B69 /* TriangleRendererEncoder.metal */,
-				B095C54D21E86A1E00B92B69 /* TriangleRendererEncoder.h */,
-				B095C54E21E86A1E00B92B69 /* TriangleRendererEncoder.mm */,
-			);
-			path = TriangleRendererEncoder;
 			sourceTree = "<group>";
 		};
 		B095C55321E86A1E00B92B69 /* TextureRendererEncoder */ = {
@@ -1495,7 +1479,6 @@
 				B04B4EAF223B6AED00569BC5 /* FuDisparityToDepth.metal in Sources */,
 				B095C6D821E86A1F00B92B69 /* TextureRenderer.m in Sources */,
 				B095C51D21E83BA800B92B69 /* main.m in Sources */,
-				B095C6DE21E86A1F00B92B69 /* TriangleRendererEncoder.mm in Sources */,
 				B095C7C721E86D2C00B92B69 /* FuMCubeTraverse.metal in Sources */,
 				B04B4EC2223B6DCD00569BC5 /* FuDepthToVertex.m in Sources */,
 				B04B4ECD223B790D00569BC5 /* FuTextureToDepth.m in Sources */,
@@ -1516,7 +1499,6 @@
 				B095C7CE21E86D2C00B92B69 /* FuTsdfFusioner.metal in Sources */,
 				B095C7CD21E86D2C00B92B69 /* FuICPPrepareMatrix.metal in Sources */,
 				B04B4EC8223B6DD700569BC5 /* FuVertexToNormal.metal in Sources */,
-				B095C6DD21E86A1F00B92B69 /* TriangleRendererEncoder.metal in Sources */,
 				B04B4EBC223B6D2500569BC5 /* FuPyramidDepthMap.metal in Sources */,
 				B095C7C521E86D2C00B92B69 /* FuMeshToTexture.mm in Sources */,
 				B095C7CF21E86D2C00B92B69 /* FuTsdfFusioner.mm in Sources */,
