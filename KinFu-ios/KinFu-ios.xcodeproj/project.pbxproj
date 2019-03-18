@@ -74,8 +74,6 @@
 		B095C7CE21E86D2C00B92B69 /* FuTsdfFusioner.metal in Sources */ = {isa = PBXBuildFile; fileRef = B095C73A21E86D2C00B92B69 /* FuTsdfFusioner.metal */; };
 		B095C7CF21E86D2C00B92B69 /* FuTsdfFusioner.mm in Sources */ = {isa = PBXBuildFile; fileRef = B095C73B21E86D2C00B92B69 /* FuTsdfFusioner.mm */; };
 		B095C7D221E86D2C00B92B69 /* FusionProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B095C74021E86D2C00B92B69 /* FusionProcessor.mm */; };
-		B0CF3F7421E884F700A04D8C /* PointRendererEncoder.metal in Sources */ = {isa = PBXBuildFile; fileRef = B0CF3F7121E884F700A04D8C /* PointRendererEncoder.metal */; };
-		B0CF3F7521E884F700A04D8C /* PointRendererEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0CF3F7221E884F700A04D8C /* PointRendererEncoder.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -441,9 +439,6 @@
 		B095C73A21E86D2C00B92B69 /* FuTsdfFusioner.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FuTsdfFusioner.metal; sourceTree = "<group>"; };
 		B095C73B21E86D2C00B92B69 /* FuTsdfFusioner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FuTsdfFusioner.mm; sourceTree = "<group>"; };
 		B095C74021E86D2C00B92B69 /* FusionProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FusionProcessor.mm; sourceTree = "<group>"; };
-		B0CF3F7121E884F700A04D8C /* PointRendererEncoder.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PointRendererEncoder.metal; sourceTree = "<group>"; };
-		B0CF3F7221E884F700A04D8C /* PointRendererEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PointRendererEncoder.mm; sourceTree = "<group>"; };
-		B0CF3F7321E884F700A04D8C /* PointRendererEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointRendererEncoder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -642,7 +637,6 @@
 		B095C54221E86A1E00B92B69 /* MetalEncoder */ = {
 			isa = PBXGroup;
 			children = (
-				B0CF3F7021E8848700A04D8C /* PointRendererEncoder */,
 				B095C54B21E86A1E00B92B69 /* TriangleRendererEncoder */,
 				B095C55321E86A1E00B92B69 /* TextureRendererEncoder */,
 			);
@@ -1395,16 +1389,6 @@
 			path = FuTsdfFusioner;
 			sourceTree = "<group>";
 		};
-		B0CF3F7021E8848700A04D8C /* PointRendererEncoder */ = {
-			isa = PBXGroup;
-			children = (
-				B0CF3F7321E884F700A04D8C /* PointRendererEncoder.h */,
-				B0CF3F7121E884F700A04D8C /* PointRendererEncoder.metal */,
-				B0CF3F7221E884F700A04D8C /* PointRendererEncoder.mm */,
-			);
-			path = PointRendererEncoder;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1507,7 +1491,6 @@
 			files = (
 				B095C51221E83BA600B92B69 /* ViewController.mm in Sources */,
 				B095C7C621E86D2C00B92B69 /* FuMCubeTraverse.m in Sources */,
-				B0CF3F7421E884F700A04D8C /* PointRendererEncoder.metal in Sources */,
 				B095C6D521E86A1F00B92B69 /* MetalContext.mm in Sources */,
 				B04B4EAF223B6AED00569BC5 /* FuDisparityToDepth.metal in Sources */,
 				B095C6D821E86A1F00B92B69 /* TextureRenderer.m in Sources */,
@@ -1538,7 +1521,6 @@
 				B095C7C521E86D2C00B92B69 /* FuMeshToTexture.mm in Sources */,
 				B095C7CF21E86D2C00B92B69 /* FuTsdfFusioner.mm in Sources */,
 				B095C6E121E86A1F00B92B69 /* TextureRendererEncoder.metal in Sources */,
-				B0CF3F7521E884F700A04D8C /* PointRendererEncoder.mm in Sources */,
 				B095C7C421E86D2C00B92B69 /* FuMeshToTexture.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
