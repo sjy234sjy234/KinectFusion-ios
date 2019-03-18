@@ -113,6 +113,8 @@
     {
         m_fusionFrameIndex = 0;
         m_isFusionComplete = NO;
+        simd::float4 cube = {-107.080887, -96.241348, -566.015991, 223.474106};
+        [self.fusionProcessor setupTsdfParameterWithCube: cube];
         [self setUpStreamForFile: self.streamPath];
     }
 }
